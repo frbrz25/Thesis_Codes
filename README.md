@@ -9,9 +9,13 @@ The stan scripts are named using the following conventions:
 - GPAI.stan (Gaussian Process)
 - splAI.stan (splines).
 
-"ptens" denotes the age-dependent back-calculation model, using a tensor product spline to model incidence.
-"tps" denotes the age-dependent back-calculation model, using a thin plate spline to model incidence.
+The other models refer to the age-dependent back-calculation models. The two simplest models are:
+- "ptens.stan" denotes the age-dependent back-calculation model, using a tensor product spline to model incidence. 
+- "tps.stan" denotes the age-dependent back-calculation model, using a thin plate spline to model incidence.
+Both models consider age-independent diagnosis probabilities and a yearly time scale.
 
-The scripts with the following suffix
-"quar"
-"age_diag" and "age_diag1" denotes the m
+More complex models are described by the following conventions
+- "quar" the model uses a quarterly (rather than yearly) time scale
+- "age_diag" and "age_diag1" use age-dependent (rather than age-independent) diagnosis probabilities. "age-diag" and "age-diag1" respectively refer to age and age-and-state specific intercept for the diagnosis process (see Section 8.4.2)
+
+Note that a pdf of the thesis will be uploaded when corrections are approved by the university of Cambridge.
