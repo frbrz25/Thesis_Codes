@@ -4,7 +4,7 @@ This repo contains (some) codes for the back-calculation models discussed in the
 Age-independent and age-dependent CD4-based multi-state Bayesian back-calculation models are written in the Stan language. This is interfaced with R using the rstan package.
 
 # Preliminaries
-Three RData files contain three template data-sets.
+Three RData files are available: these contain the following template data-sets:
 - TempDataAI.RData (age-independent quarterly data)
 - TempDataAD.RData (age-dependent yearly data)
 - TempDataADQt.RData (age-dependent quarterly data)
@@ -14,7 +14,7 @@ Two R scripts provide working examples:
 - RunAI.R (runs the age-independent back-calculation model).
 - RunAD.R (runs the age-dependent back-calculation model).
 
-It is possible to fit different variants of the back-calculation models (e.g. using a yearly and a quarterly time scale, using different models for the infection process) by calling different stan scripts. For further details see the stan scripts section or the instructions in the R file.
+These scripts work with the template data, discussed in the Preliminaries section. It is possible to fit different variants of the back-calculation models (e.g. using a yearly and a quarterly time scale, using different models for the infection process) by calling different stan scripts. For further details see the stan scripts section or the instructions in the R file.
 
 # Stan scripts
 The stan scripts are named using the following conventions:
