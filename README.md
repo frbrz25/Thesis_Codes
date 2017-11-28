@@ -4,10 +4,10 @@ This repo contains (some) codes for the back-calculation models discussed in the
 The stan scripts are named using the following conventions:
 
 "AI" denotes age-independent back-calculation models. These are of four types: 
-- RW1 (random walk from an intermediate point of the epidemic)
-- RW1978 (random walk from the beginning of the epidemic)
-- GP (Gaussian Process)
-- spl (splines).
+- RW1AI.stan (random walk from an intermediate point of the epidemic)
+- RW1978AI.stan (random walk from the beginning of the epidemic)
+- GPAI.stan (Gaussian Process)
+- splAI.stan (splines).
 
 "ptens" denotes the age-dependent back-calculation model, using a tensor product spline to model incidence.
 "tps" denotes the age-dependent back-calculation model, using a thin plate spline to model incidence.
